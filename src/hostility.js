@@ -496,7 +496,7 @@ outputContent += '\n';
 // content did not change
 if (!hasChanged) {
     // do nothing if output file is the same as input file
-    if (args['--input'] == args['--output']) {
+    if (inputFile == outputFile) {
         std.err.printf(`Nothing to do (content did not change)\n`);
         std.out.printf('0\n');
         std.exit(0);
